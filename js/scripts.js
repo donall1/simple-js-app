@@ -7,18 +7,12 @@ let pokemonArray = [
 
 
 for (let i = 0; i < pokemonList.length; i++) {
-  if (pokemonList[i].height >= 2) {
+  if (pokemonList[i].height < 1) {
     document.write(
-      pokemonList[i].name + "" + " (height: " + pokemonList[i].height + ") "
+      pokemonlist[i].name + pokemonList[i].height
     );
   } else {
-    document.write(
-      pokemonList[i].name +
-        "" +
-        " (height: " +
-        pokemonList[i].height +
-        ")" +
-        " -Wow, that is big! "
-    );
+    document.write
+    pokemonList[i].name + "" + " (height: " + pokemon.List[i].height + ")" + "-wow, that is big! "
   }
 }
