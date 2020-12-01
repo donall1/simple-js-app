@@ -1,0 +1,22 @@
+.button-class{
+  padding: 15px 30px;
+  text-align: center;
+  ;display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #c21a1a;
+  color: #FFFFFF;
+  border-radius: 10%;
+}
+.pokemon-list{
+  text-align: center;
+  list-style-type: none;
+}
+.title{
+  text-align: center;
+  margin-left: 0;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: #800000;
+}
