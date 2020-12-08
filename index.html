@@ -7,12 +7,26 @@
     <title>Pokedex</title>
   </head>
 
+
   <body>
     <div class="title">
       <h1>Pokedex</h1>
     </div>
     <ul class ="pokemon-list"></ul>
-    <script src="js/scripts.js"></script>
+    <div id="modal-container">
+      <div class="modal">
+        <button class="modal-close">Close</button>
+        <h1>Modal title</h1>
+        <p>Modal text</p>
+      </div>
+      <div id="image-container">
+      </div>
+    </div>
+    <strong>
+      <script src="js/scripts.js"></script>
+      <script src="js/fetch-polyfill.js"></script>
+      <script src="js/promisepolyfill.js"></script>
+    </strong>
   </body>
 
 </html>
