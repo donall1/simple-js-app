@@ -1,5 +1,5 @@
 .btn{
-  padding: 16px 32px;
+  padding: 13px 26px;
   text-align: center;
   display: inline-block;
   font-size: 25px;
@@ -9,11 +9,12 @@
   transition-duration: 0.4s;
   width: 250px;
   cursor: pointer;
-  background-color: #F8B195;
+  background-color: #F67280;
   color: #FFFFFF;
-  border: 2px solid #F67280;
   border-radius: 10%;
   }
+
+
 
 
 .pokemon-list{
