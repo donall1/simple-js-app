@@ -1,6 +1,6 @@
 let pokemonRepository = (function () {
   let pokemonList = [];
-  let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
   function getAll() {
     return pokemonList;
@@ -8,20 +8,16 @@ let pokemonRepository = (function () {
 
 
   function addListItem(pokemon) {
-    let pokemonList = document.querySelector(".pokemon-list");
-    let listpokemon = document.createElement("li");
-    let button = document.createElement("button");
+    let pokemonList = document.querySelector('.pokemon-list');
+    let listpokemon = document.createElement('li');
+    let button = document.createElement('button');
 
     button.innerText = pokemon.name;
-    button.classList.add("btn");
+    button.classList.add('btn');
 
     listpokemon.append(button);
     pokemonList.append(listpokemon);
 
-    button.addEventListener("click", function (event) {
-      showDetails(pokemon);
-    });
-  }
 
 
   function showDetails(item) {
@@ -43,7 +39,11 @@ let pokemonRepository = (function () {
             name: item.name,
             detailsUrl: item.url,
           };
+        });
       })
+      .catch(function (e) {
+        console.error(e);
+      });
   }
 
 
@@ -64,24 +64,24 @@ let pokemonRepository = (function () {
 
 
   function showModal(pokemon) {
-    let modalBody = $(".modal-body");
-    let modalHeader = $(".modal-header");
-    let modalTitle = $(".modal-title");
-    let btnClose = $("#btnClose");
+    let modalBody = $('.modal-body');
+    let modalHeader = $('.modal-header');
+    let modalTitle = $('.modal-title');
+    let btnClose = $('#btnClose');
 
-    $("#modal-container").modal("show");
+    $('#modal-container').modal('show');
 
     modalHeader.empty();
     modalTitle.empty();
     modalBody.empty();
 
-    let titleElement = $("<h1>" + pokemon.name + "</h1>");
+    let titleElement = $('<h1>' + pokemon.name + '</h1>');
 
-    let heightElement = $("<p>" + "Height: " + pokemon.height + "</p>");
+    let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');
 
-    let weightElement = $("<p>" + "Weight: " + pokemon.weight + "</p>");
+    let weightElement = $('<p>' + 'Weight: ' + pokemon.weight + '</p>');
 
-    let imageElement = $('<img class="modal-img">');
+    let imageElement = $('<img class=''modal-img''>');
     imageElement.attr("src", pokemon.imageUrl);
 
     //
@@ -105,6 +105,7 @@ let pokemonRepository = (function () {
 })();
 
 console.log = function() {}
+
 
 
 
