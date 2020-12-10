@@ -17,8 +17,7 @@ let pokemonRepository = (function () {
 
     listpokemon.append(button);
     pokemonList.append(listpokemon);
-
-
+}
 
   function showDetails(item) {
     pokemonRepository.loadDetails(item).then(function () {
@@ -84,7 +83,6 @@ let pokemonRepository = (function () {
     loadDetails,
     showDetails,
   };
-};
 
 console.log = function() {}
 
