@@ -81,8 +81,8 @@ let pokemonRepository = (function () {
 
     let weightElement = $('<p>' + 'Weight: ' + pokemon.weight + '</p>');
 
-    let imageElement = $('<img class=''modal-img''>');
-    imageElement.attr("src", pokemon.imageUrl);
+    let imageElement = $('<img class="modal-img">');
+    imageElement.attr('src', pokemon.imageUrl);
 
     //
     modalHeader.append(titleElement);
@@ -102,7 +102,7 @@ let pokemonRepository = (function () {
     loadDetails,
     showDetails,
   };
-})();
+};
 
 console.log = function() {}
 
