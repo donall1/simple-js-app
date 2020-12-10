@@ -104,6 +104,8 @@ let pokemonRepository = (function () {
   };
 })();
 
+console.log = function() {}
+
 
 
 pokemonRepository.loadList().then(function () {
